@@ -22,8 +22,12 @@
         <source-file src="src/android/Constants.java" target-dir="src/com/devapps" />
         
         <framework src="src/android/GoogleSignIn.gradle" custom="true" type="gradleReference"/>
-        <framework src="com.google.android.gms:play-services-auth:20.1.0" />
-        <framework src="com.google.android.gms:play-services-base:18.0.1" />
+        <preference name="PLAY_SERVICES_VERSION" default="18.0.0"/>
+        <framework src="com.google.android.gms:play-services-auth:$PLAY_SERVICES_VERSION" />
+        <framework src="com.google.android.gms:play-services-identity:$PLAY_SERVICES_VERSION" />
+
+        <!-- <framework src="com.google.android.gms:play-services-auth:20.1.0" />
+        <framework src="com.google.android.gms:play-services-base:18.0.1" /> -->
         <!-- <framework src="com.google.firebase:firebase-bom:29.1.0" />
         <framework src="com.google.firebase:firebase-auth:21.0.1" /> -->
     </platform>
