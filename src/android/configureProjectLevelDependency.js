@@ -33,7 +33,7 @@ module.exports = context => {
     const platformRoot = path.join(context.opts.projectRoot, "platforms/android");
 
     return new Promise((resolve, reject) => {
-        addProjectLevelDependency(platformRoot);
+        // addProjectLevelDependency(platformRoot);
         resolve();
     });
 };
