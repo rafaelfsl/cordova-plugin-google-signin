@@ -32,13 +32,13 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.auth.AuthCredential;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.GetTokenResult;
-import com.google.firebase.auth.GoogleAuthProvider;
+// import com.google.firebase.FirebaseApp;
+// import com.google.firebase.auth.AuthCredential;
+// import com.google.firebase.auth.AuthResult;
+// import com.google.firebase.auth.FirebaseAuth;
+// import com.google.firebase.auth.FirebaseUser;
+// import com.google.firebase.auth.GetTokenResult;
+// import com.google.firebase.auth.GoogleAuthProvider;
 
 import java.util.Date;
 
@@ -48,7 +48,7 @@ public class GoogleSignInPlugin extends CordovaPlugin {
     private static final int RC_ONE_TAP = 102;
 
     private GoogleSignInAccount account;
-    private FirebaseAuth mAuth;
+    // private FirebaseAuth mAuth;
 
     private SignInClient mOneTapSigninClient;
     private BeginSignInRequest mSiginRequest;
@@ -61,7 +61,7 @@ public class GoogleSignInPlugin extends CordovaPlugin {
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
         mCurrentActivity = this.cordova.getActivity();
-        mAuth = FirebaseAuth.getInstance();
+        // mAuth = FirebaseAuth.getInstance();
         mContext = this.cordova.getActivity().getApplicationContext();
         // FirebaseApp.initializeApp(mContext);
         // checkIfOneTapSignInCoolingPeriodShouldBeReset();
